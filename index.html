@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentes que Transformaram o Mundo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">✦ Mentes que Transformaram o Mundo</div>
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#linha-do-tempo">Linha do tempo</a>
+        <a href="#explorar">Explorar mentes</a>
+        <a href="#quiz">Quiz</a>
+        <button id="idioma">EN</button>
+    </nav>
+</header>
+
+<section id="inicio" class="hero">
+    <div class="hero-texto">
+        <span class="etiqueta">UMA VIAGEM PELA HISTÓRIA</span>
+        <h1>Mentes que <span>transformaram</span> o mundo</h1>
+        <p>
+            Viaje por diferentes épocas e descubra as ideias, invenções
+            e atitudes de pessoas que ajudaram a mudar a ciência,
+            a tecnologia, a cultura e a sociedade.
+        </p>
+        <a class="botao" href="#linha-do-tempo">Começar a viagem ↓</a>
+        <a class="botao secundario" href="#quiz">Descobrir minha mente</a>
+
+        <div class="numeros">
+            <div><strong>8</strong><p>Grandes mentes</p></div>
+            <div><strong>4</strong><p>Períodos históricos</p></div>
+            <div><strong>1</strong><p>Máquina do tempo</p></div>
+        </div>
+    </div>
+
+    <div class="relogio">
+        <span>⚛️</span>
+        <div>⏳</div>
+        <span>💡</span>
+        <span>🎨</span>
+        <span>🪐</span>
+        <p>TIME • IDEAS • CHANGE</p>
+    </div>
+</section>
+
+<section class="destaques">
+    <article>
+        <span>🔭</span>
+        <h2>Conhecimento que atravessa épocas</h2>
+        <p>Da Grécia Antiga à ciência moderna, ideias antigas continuam inspirando novas descobertas.</p>
+    </article>
+    <article>
+        <span>🌍</span>
+        <h2>Muitas formas de transformar</h2>
+        <p>Ciência, arte, educação e justiça social também mudam a maneira como vivemos.</p>
+    </article>
+    <article>
+        <span>♀️</span>
+        <h2>Ciência também é delas</h2>
+        <p>Conheça mulheres que abriram caminhos e ampliaram os limites do conhecimento.</p>
+    </article>
+</section>
+
+<section id="linha-do-tempo" class="secao timeline">
+    <div class="titulo">
+        <span>PORTAL TEMPORAL</span>
+        <h2>Uma linha do tempo de ideias</h2>
+        <p>Escolha um período para encontrar as mentes que marcaram sua época.</p>
+    </div>
+
+    <div class="filtros-periodo">
+        <button class="periodo ativo" data-periodo="Todos">Todas as épocas</button>
+        <button class="periodo" data-periodo="Antiguidade">Antiguidade</button>
+        <button class="periodo" data-periodo="Idade Média">Idade Média</button>
+        <button class="periodo" data-periodo="Revolução Industrial">Revolução Industrial</button>
+        <button class="periodo" data-periodo="Século XX">Século XX</button>
+    </div>
+
+    <div id="eventos" class="eventos"></div>
+</section>
+
+<section id="explorar" class="secao">
+    <div class="titulo">
+        <span>CONHEÇA AS HISTÓRIAS</span>
+        <h2>Explore grandes mentes</h2>
+        <p>Pesquise por nome, escolha uma área e clique em uma personalidade para conhecer sua história.</p>
+    </div>
+
+    <div class="pesquisa">
+        <input type="text" id="busca" placeholder="🔎 Pesquisar personalidade...">
+
+        <select id="filtroArea">
+            <option value="Todas">Todas as áreas</option>
+            <option value="Medicina">Medicina</option>
+            <option value="Matemática e Física">Matemática e Física</option>
+            <option value="Música e natureza">Música e natureza</option>
+            <option value="Comunicação">Comunicação</option>
+            <option value="Computação">Computação</option>
+            <option value="Eletricidade e química">Eletricidade e química</option>
+            <option value="Direitos humanos">Direitos humanos</option>
+            <option value="Física">Física</option>
+        </select>
+    </div>
+
+    <p class="contador"><span id="quantidade">8</span> personalidades encontradas</p>
+    <div id="pessoas" class="pessoas"></div>
+    <p id="semResultados" class="escondido">Nenhuma personalidade encontrada. Tente outra pesquisa!</p>
+</section>
+
+<section id="mulheres" class="secao mulheres">
+    <div>
+        <span class="etiqueta">SNCT 2026 • CIÊNCIA DELAS</span>
+        <h2>O futuro também é escrito por mulheres.</h2>
+        <p>
+            Durante muito tempo, mulheres enfrentaram barreiras para estudar,
+            pesquisar e ter suas descobertas reconhecidas. Conhecer suas
+            histórias ajuda a construir uma ciência mais diversa.
+        </p>
+    </div>
+    <article>
+        <h3>💻 Ada Lovelace</h3>
+        <p>Imaginou que máquinas poderiam seguir instruções e manipular símbolos, além de números.</p>
+    </article>
+    <article>
+        <h3>🎼 Hildegarda de Bingen</h3>
+        <p>Produziu música e escreveu sobre natureza, saúde e filosofia na Europa medieval.</p>
+    </article>
+</section>
+
+<section id="quiz" class="secao timeline">
+    <div class="titulo centralizado">
+        <span>DESAFIO FINAL</span>
+        <h2>Qual mente combina com você?</h2>
+        <p>Responda às perguntas e descubra qual personalidade combina com seus interesses.</p>
+    </div>
+
+    <form id="quizForm">
+        <fieldset>
+            <legend>1. Qual atividade mais desperta sua curiosidade?</legend>
+            <label><input type="radio" name="q1" value="curiosidade" required> Investigar como o mundo funciona</label>
+            <label><input type="radio" name="q1" value="criatividade"> Criar algo novo com ideias</label>
+            <label><input type="radio" name="q1" value="justica"> Defender pessoas e mudar a sociedade</label>
+            <label><input type="radio" name="q1" value="logica"> Resolver problemas com lógica</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>2. Diante de um desafio, você costuma...</legend>
+            <label><input type="radio" name="q2" value="curiosidade" required> Observar, pesquisar e testar</label>
+            <label><input type="radio" name="q2" value="criatividade"> Imaginar possibilidades diferentes</label>
+            <label><input type="radio" name="q2" value="justica"> Ouvir as pessoas e buscar uma solução justa</label>
+            <label><input type="radio" name="q2" value="logica"> Dividir o problema em etapas</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>3. Que legado você gostaria de deixar?</legend>
+            <label><input type="radio" name="q3" value="curiosidade" required> Uma descoberta que ajude a humanidade</label>
+            <label><input type="radio" name="q3" value="criatividade"> Uma invenção ou ideia inovadora</label>
+            <label><input type="radio" name="q3" value="justica"> Um mundo mais igualitário</label>
+            <label><input type="radio" name="q3" value="logica"> Uma solução que facilite a vida das pessoas</label>
+        </fieldset>
+
+        <button type="submit" class="botao">Revelar meu resultado ✦</button>
+        <div id="resultado" class="resultado escondido"></div>
+    </form>
+</section>
+
+<footer>
+    <h3>✦ Mentes que Transformaram o Mundo</h3>
+    <p>Projeto educativo interdisciplinar • História, ciência, tecnologia e sociedade</p>
+    <p>Desenvolvido com HTML, CSS e JavaScript.</p>
+</footer>
+
+<div id="modal" class="modal escondido">
+    <div class="modal-conteudo">
+        <button id="fechar" class="fechar">×</button>
+        <span id="modalPeriodo" class="etiqueta"></span>
+        <h2 id="modalNome"></h2>
+        <p id="modalAnos"></p>
+        <p id="modalArea" class="area"></p>
+        <div id="modalBio"></div>
+        <h3>Por que essa pessoa importa?</h3>
+        <p id="modalLegado"></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
